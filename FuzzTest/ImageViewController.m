@@ -31,7 +31,6 @@
 
 -(void) imageFetched:(UIImage *)image
 {
-    NSLog(@"IMAGE VC FETCHED: %@", _imgView);
     _imgView.image = image;
 }
 
