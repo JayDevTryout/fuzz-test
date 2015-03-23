@@ -38,7 +38,6 @@
     
     if (![DataManager init])
     {
-        
         _tableData = [DataManager getAll];
         
         [_segmentedControl addTarget:self
@@ -100,6 +99,13 @@
     if ([data.type isEqualToString:IMAGE_TYPE]) reuseIdentifier = IMAGE_TYPE;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    if (NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1)
+    {
+        cell.contentView.frame = cell.bounds;
+        cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin |UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+    }
+    
     
     // Configure the cell...
     [self configureCell:cell withData:data];
