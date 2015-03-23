@@ -54,6 +54,7 @@
                                 <connections>
                                     <outlet property="dateLabel" destination="Ezg-be-lGr" id="pTS-Qi-pUD"/>
                                     <outlet property="imgView" destination="TPV-qF-PIO" id="RfI-o6-Xn9"/>
+                                    <outlet property="loader" destination="OWM-FC-pzi" id="nQW-mE-yBj"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="text" rowHeight="80" id="CO4-Hj-tgI" customClass="TextTableViewCell">
@@ -62,26 +63,30 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CO4-Hj-tgI" id="Rno-hi-337">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-TM-4SD">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-TM-4SD">
                                             <rect key="frame" x="8" y="24" width="584" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-g6-Zps">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-g6-Zps">
                                             <rect key="frame" x="501" y="50" width="91" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="0br-SR-2sP"/>
+                                                <constraint firstAttribute="width" constant="91" id="MjN-PO-7gM"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="top" secondItem="Rno-hi-337" secondAttribute="topMargin" constant="16" id="4sh-hU-VhH"/>
-                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="trailing" secondItem="Rno-hi-337" secondAttribute="trailingMargin" id="G2J-No-1oO"/>
-                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="top" secondItem="r2H-TM-4SD" secondAttribute="bottom" constant="5" id="Saa-28-T4g"/>
-                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="trailing" secondItem="Rno-hi-337" secondAttribute="trailingMargin" id="ZWG-Tr-N4y"/>
-                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="leading" secondItem="Rno-hi-337" secondAttribute="leadingMargin" id="q8d-Wq-p6V"/>
-                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="bottom" secondItem="Rno-hi-337" secondAttribute="bottomMargin" id="qsw-JT-jDt"/>
+                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="leading" secondItem="Rno-hi-337" secondAttribute="leadingMargin" id="12X-Nl-1z7"/>
+                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="trailing" secondItem="Rno-hi-337" secondAttribute="trailingMargin" id="BoN-g1-zZE"/>
+                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="top" secondItem="r2H-TM-4SD" secondAttribute="bottom" constant="5" id="Cjr-eP-lUB"/>
+                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="trailing" secondItem="Rno-hi-337" secondAttribute="trailingMargin" id="cUI-3x-vMG"/>
+                                        <constraint firstItem="r2H-TM-4SD" firstAttribute="top" secondItem="Rno-hi-337" secondAttribute="topMargin" constant="16" id="lJY-fQ-HjD"/>
+                                        <constraint firstItem="RGT-g6-Zps" firstAttribute="bottom" secondItem="Rno-hi-337" secondAttribute="bottomMargin" id="vXh-Gf-OkY"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
