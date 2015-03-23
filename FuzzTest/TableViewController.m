@@ -100,18 +100,10 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    if (NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1)
-    {
-        cell.contentView.frame = cell.bounds;
-        cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin |UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
-    }
-    
-    
     // Configure the cell...
     [self configureCell:cell withData:data];
     return cell;
 }
-
 
 #pragma mark - Table view delegate
 
@@ -134,6 +126,11 @@
         [self.navigationController pushViewController:webVC
                                              animated:YES];
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 #pragma mark - Table view helpers
