@@ -138,10 +138,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="YPw-l7-lEy" secondAttribute="trailing" constant="-16" id="pmj-qa-vEx"/>
-                            <constraint firstItem="YPw-l7-lEy" firstAttribute="leading" secondItem="AvS-YP-SZR" secondAttribute="leadingMargin" constant="-16" id="tHg-Qp-6k6"/>
-                            <constraint firstItem="tDL-b2-ic8" firstAttribute="top" secondItem="YPw-l7-lEy" secondAttribute="bottom" id="tkz-Nf-a9J"/>
-                            <constraint firstItem="YPw-l7-lEy" firstAttribute="top" secondItem="AvS-YP-SZR" secondAttribute="topMargin" id="ygw-Rp-h9s"/>
+                            <constraint firstItem="YPw-l7-lEy" firstAttribute="top" secondItem="AvS-YP-SZR" secondAttribute="top" id="4Tw-Dq-kf5"/>
+                            <constraint firstItem="YPw-l7-lEy" firstAttribute="leading" secondItem="AvS-YP-SZR" secondAttribute="leading" id="IDc-DW-K7F"/>
+                            <constraint firstItem="YPw-l7-lEy" firstAttribute="bottom" secondItem="tDL-b2-ic8" secondAttribute="top" id="T8G-o6-xmn"/>
+                            <constraint firstAttribute="trailing" secondItem="YPw-l7-lEy" secondAttribute="trailing" id="dB4-zh-ja1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -171,10 +171,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1eg-9K-byS" firstAttribute="leading" secondItem="8N4-Ha-cLE" secondAttribute="leadingMargin" constant="-16" id="7e0-WA-JfD"/>
-                            <constraint firstItem="1eg-9K-byS" firstAttribute="top" secondItem="8N4-Ha-cLE" secondAttribute="topMargin" id="bh6-vc-yy2"/>
-                            <constraint firstItem="gwG-sk-9Vw" firstAttribute="top" secondItem="1eg-9K-byS" secondAttribute="bottom" id="gHt-He-ndi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1eg-9K-byS" secondAttribute="trailing" constant="-16" id="qxo-pa-Z0C"/>
+                            <constraint firstAttribute="trailing" secondItem="1eg-9K-byS" secondAttribute="trailing" id="0q4-g1-vgF"/>
+                            <constraint firstItem="1eg-9K-byS" firstAttribute="top" secondItem="8N4-Ha-cLE" secondAttribute="top" id="WBL-TZ-RN7"/>
+                            <constraint firstItem="1eg-9K-byS" firstAttribute="leading" secondItem="8N4-Ha-cLE" secondAttribute="leading" id="WTt-ZD-zXP"/>
+                            <constraint firstItem="1eg-9K-byS" firstAttribute="bottom" secondItem="gwG-sk-9Vw" secondAttribute="top" id="fcw-LO-n7c"/>
                         </constraints>
                     </view>
                     <connections>
